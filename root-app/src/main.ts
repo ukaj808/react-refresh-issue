@@ -2,6 +2,13 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
+// @ts-ignore
+import { createRoot as cr1 } from  'reactlibrary1';
+// @ts-ignore
+import { createRoot as cr2 } from  'reactlibrary2';
+
+console.log('cr1', cr1);
+console.log('cr2', cr2);
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
